@@ -47,8 +47,7 @@
     <p>Microphone access is optional. You can deny it and the rest of the app works normally; only voice capture will be unavailable.</p>
 
     <h3>2.3 AI Parsing (Text and Receipt Images)</h3>
-    <p>When you submit an expense via voice, text, or receipt scan, the input is sent to our backend server, which uses Google Gemini to parse it into structured expense fields (amount, category, description, date). This data is transmitted over HTTPS and used solely to return the parsed result. We do not store your expense content on our servers beyond the duration of the API request.</p>
-    <p>Google&rsquo;s data practices for Gemini API inputs are governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s Privacy Policy</a>.</p>
+    <p>When you submit an expense via voice, text, or receipt scan, the input is sent to our backend server, which uses an AI parsing service to extract structured expense fields (amount, category, description, date). This data is transmitted over HTTPS and used solely to return the parsed result. We do not store your expense content on our servers beyond the duration of the API request.</p>
 
     <h3>2.4 Analytics (PostHog)</h3>
     <p>We use PostHog to collect anonymized usage analytics, including screens visited, feature interactions (e.g. voice capture started, receipt scan started), app version, and platform. This data helps us understand which features are useful. PostHog analytics do <strong>not</strong> include the content of your expenses.</p>
