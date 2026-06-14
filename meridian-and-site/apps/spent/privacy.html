@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Spent</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a href="/" class="site-logo">Meridian&amp;</a>
+    <nav class="site-nav">
+      <a href="/apps/spent/support.html">Support</a>
+      <a href="/apps/spent/privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container-narrow">
+    <div class="page-hero">
+      <span class="app-icon">💸</span>
+      <h1>Privacy Policy</h1>
+      <p>Your expense data stays on your device. We never sell your data.</p>
+      <div class="page-nav">
+        <a href="/apps/spent/">Overview</a>
+        <a href="/apps/spent/support.html">Support</a>
+        <a href="/apps/spent/privacy.html" class="active">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p class="meta">Spent &mdash; Last updated June 14, 2026</p>
+
+      <h2>Summary</h2>
+      <p>Spent is designed with your privacy in mind. Your expense data is stored <strong>locally on your device</strong> and is never sold or shared with advertisers. We collect limited diagnostic and analytics data solely to improve the app.</p>
+
+      <h2>Information We Collect</h2>
+
+      <h3>Expense Data</h3>
+      <p>All expenses you log &mdash; amounts, dates, categories, descriptions, and notes &mdash; are stored in a local database on your device. This data is <strong>not uploaded to our servers</strong> and is not accessible to us. Receipt images you capture are processed for extraction and not retained on our servers after processing.</p>
+
+      <h3>Voice Input</h3>
+      <p>When you use voice capture, your device&rsquo;s on-device speech recognition converts your speech to text. That text is sent to our AI parsing service to extract the expense details. <strong>Your audio is never transmitted</strong> &mdash; only the transcribed text is sent. Microphone access is optional; denying it only disables voice capture.</p>
+
+      <h3>AI Parsing</h3>
+      <p>When you submit an expense via voice, text, or receipt scan, the input is sent to our backend server, which uses Google Gemini to parse it into structured fields (amount, category, description, date). This data is transmitted over HTTPS and used solely to return the parsed result. We do not store your expense content after the API request completes.</p>
+      <p>Google&rsquo;s practices for Gemini API inputs are governed by <a href="https://policies.google.com/privacy">Google&rsquo;s Privacy Policy</a>.</p>
+
+      <h3>Analytics</h3>
+      <p>We use PostHog to collect anonymized usage analytics: screens visited, feature interactions, app version, and platform. This data does <strong>not</strong> include the content of your expenses. It helps us understand which features are useful and improve the app. <a href="https://posthog.com/privacy">PostHog Privacy Policy &rarr;</a></p>
+
+      <h3>Crash Reporting</h3>
+      <p>We use Sentry to collect crash reports and error logs. Sentry may collect your IP address at the time of a crash, device type, OS version, app version, and stack traces. This is used exclusively to diagnose and fix bugs. <a href="https://sentry.io/privacy">Sentry Privacy Policy &rarr;</a></p>
+
+      <h3>Permissions</h3>
+      <table>
+        <thead>
+          <tr><th>Permission</th><th>Purpose</th><th>Required?</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Microphone</td><td>Voice expense capture</td><td>Optional</td></tr>
+          <tr><td>Camera</td><td>Receipt photo scanning</td><td>Optional</td></tr>
+          <tr><td>Photo Library</td><td>Upload receipts from gallery</td><td>Optional</td></tr>
+          <tr><td>Notifications</td><td>Budget alerts and reminders</td><td>Optional</td></tr>
+        </tbody>
+      </table>
+      <p>You can revoke any permission at any time in your device Settings. Revoking only disables that specific feature &mdash; it does not affect your stored expense data.</p>
+
+      <h2>How We Use Your Information</h2>
+      <table>
+        <thead>
+          <tr><th>Data</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Expense data</td><td>Stored locally to display your history, budgets, and charts</td></tr>
+          <tr><td>Voice transcription &amp; receipt images</td><td>Sent to our AI service for parsing; not retained after the response</td></tr>
+          <tr><td>Analytics events</td><td>Improve app features and user experience</td></tr>
+          <tr><td>Crash reports</td><td>Identify and fix bugs</td></tr>
+        </tbody>
+      </table>
+      <p>We do <strong>not</strong> sell your data, use it for advertising, or share your expense content with any party other than the AI parsing service described above.</p>
+
+      <h2>Data Storage and Retention</h2>
+      <ul>
+        <li><strong>Expense data</strong> lives entirely on your device. Deleting the app deletes this data permanently.</li>
+        <li><strong>Analytics and crash data</strong> are retained by PostHog and Sentry per their own retention policies.</li>
+        <li><strong>AI parsing inputs</strong> are not retained on our servers after the response is returned.</li>
+      </ul>
+      <p>We do not operate user accounts, so there is no account data to delete.</p>
+
+      <h2>Children&rsquo;s Privacy</h2>
+      <p>Spent is not directed at children under 13 (or under 16 in the EEA). We do not knowingly collect personal information from children. If you believe a child has provided us information, contact us and we will delete it promptly.</p>
+
+      <h2>International Users</h2>
+      <p>Our AI parsing service and third-party analytics providers may process data in the United States or other countries. By using Spent, you consent to this transfer.</p>
+
+      <h2>Your Rights</h2>
+      <p>Depending on your location, you may have rights to access, delete, or opt out of collection of your personal data. Contact us at <a href="mailto:indiebuilderasad@gmail.com">indiebuilderasad@gmail.com</a> for any requests.</p>
+
+      <h2>Security</h2>
+      <p>All data transmitted to our servers uses HTTPS encryption. Your expense data is stored locally and protected by your device&rsquo;s own security.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>We may update this policy as the app evolves. We will update the &ldquo;Last updated&rdquo; date at the top. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+      <h2>Contact</h2>
+      <p><strong>Muhammad Asad Shoaib / Meridian&amp;</strong><br>
+      <a href="mailto:indiebuilderasad@gmail.com">indiebuilderasad@gmail.com</a></p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div class="footer-top">
+      <span class="footer-brand">Meridian&amp;</span>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/apps/spent/privacy.html">Privacy Policy</a>
+        <a href="/apps/spent/support.html">Support</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2026 Meridian&amp;. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
