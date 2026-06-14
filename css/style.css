@@ -1,0 +1,263 @@
+:root {
+  --bg: #ffffff;
+  --bg-subtle: #f7f7f5;
+  --border: #e5e5e2;
+  --text: #1a1a1a;
+  --text-muted: #6b6b6b;
+  --accent: #1a1a1a;
+  --accent-hover: #333;
+  --radius: 10px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+a:hover { color: var(--accent-hover); }
+
+/* ── Layout ── */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+}
+.site-header .inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+.site-logo {
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.3px;
+  text-decoration: none;
+  color: var(--text);
+}
+.site-logo:hover { color: var(--text); text-decoration: none; }
+
+.site-nav a {
+  font-size: 14px;
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-left: 20px;
+}
+.site-nav a:hover { color: var(--text); }
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 24px;
+  margin-top: 80px;
+}
+.site-footer .inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.site-footer p { font-size: 13px; color: var(--text-muted); }
+.site-footer a { font-size: 13px; color: var(--text-muted); }
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+/* ── Home hero ── */
+.hero {
+  padding: 80px 0 48px;
+}
+.hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.hero p {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 480px;
+}
+
+/* ── App cards ── */
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  margin-bottom: 64px;
+}
+
+.app-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  text-decoration: none;
+  color: var(--text);
+  display: block;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.app-card:hover {
+  border-color: #aaa;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  text-decoration: none;
+  color: var(--text);
+}
+.app-card .app-icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+  display: block;
+}
+.app-card h2 { font-size: 17px; font-weight: 600; margin-bottom: 6px; }
+.app-card p { font-size: 14px; color: var(--text-muted); line-height: 1.5; }
+.app-card .app-badge {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3px 10px;
+}
+
+/* ── App page header ── */
+.page-hero {
+  padding: 48px 0 32px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 48px;
+}
+.page-hero .app-icon { font-size: 48px; margin-bottom: 16px; display: block; }
+.page-hero h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 6px; }
+.page-hero p { font-size: 15px; color: var(--text-muted); }
+.page-nav { margin-top: 20px; display: flex; gap: 12px; }
+.page-nav a {
+  font-size: 14px;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+.page-nav a:hover { border-color: #aaa; color: var(--text); }
+.page-nav a.active {
+  background: var(--text);
+  color: #fff;
+  border-color: var(--text);
+}
+
+/* ── Prose (privacy/support body) ── */
+.prose h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 40px 0 12px;
+  letter-spacing: -0.3px;
+}
+.prose h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 28px 0 8px;
+  color: var(--text);
+}
+.prose p { margin-bottom: 14px; color: var(--text); }
+.prose ul {
+  margin: 10px 0 14px 20px;
+  color: var(--text);
+}
+.prose ul li { margin-bottom: 6px; }
+.prose strong { font-weight: 600; }
+.prose .meta {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  font-size: 14px;
+}
+.prose th {
+  text-align: left;
+  padding: 10px 12px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  font-weight: 600;
+}
+.prose td {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  vertical-align: top;
+}
+
+/* ── Support cards ── */
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 24px 0 40px;
+}
+.support-card {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.support-card h3 { font-size: 15px; font-weight: 600; margin-bottom: 8px; }
+.support-card p { font-size: 14px; color: var(--text-muted); }
+
+.contact-box {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  text-align: center;
+  margin-top: 40px;
+}
+.contact-box h2 { font-size: 20px; font-weight: 600; margin-bottom: 8px; }
+.contact-box p { font-size: 14px; color: var(--text-muted); margin-bottom: 20px; }
+.btn {
+  display: inline-block;
+  background: var(--text);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.btn:hover { background: var(--accent-hover); color: #fff; text-decoration: none; }
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 30px; }
+  .hero p { font-size: 16px; }
+  .site-footer .inner { flex-direction: column; align-items: flex-start; }
+}
