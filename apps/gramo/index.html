@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gramo &mdash; AI Calorie Tracker by Meridian&amp;</title>
+  <meta name="description" content="Snap a photo of your meal, get calories and macros instantly. AI-powered calorie tracking that does the work for you.">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a href="/" class="site-logo">Meridian&amp;</a>
+    <nav class="site-nav">
+      <a href="/apps/gramo/support.html">Support</a>
+      <a href="/apps/gramo/privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <p class="eyebrow fade-up">Gramo &mdash; AI Calorie Tracker</p>
+    <h1 class="fade-up fade-up-delay-1">Snap it.<br>Log it.</h1>
+    <p class="fade-up fade-up-delay-2">Photograph your meal and Gramo&rsquo;s AI estimates the calories and macros instantly &mdash; no barcode scanning, no searching databases.</p>
+    <div class="hero-cta fade-up fade-up-delay-3">
+      <a href="#" class="btn btn-blue">Download on the App Store</a>
+      <a href="#" class="btn btn-outline">Get it on Google Play</a>
+    </div>
+    <div class="hero-device fade-up fade-up-delay-3">
+      <div class="phone-frame phone-frame-lg">
+        <div class="screen">
+          <img src="/images/gramo/dashboard.png" alt="Gramo dashboard">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-section">
+    <div class="feature-text fade-up">
+      <p class="label">AI-Powered Logging</p>
+      <h2>Photo to macros<br>in seconds.</h2>
+      <p>Point your camera at any meal. Gramo identifies what&rsquo;s on your plate and returns calories, protein, carbs, and fat &mdash; then gets out of your way.</p>
+    </div>
+    <div class="feature-device fade-up fade-up-delay-1">
+      <div class="phone-frame">
+        <div class="screen">
+          <img src="/images/gramo/capture.png" alt="Meal photo capture">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section class="feature-section reverse">
+    <div class="feature-text fade-up">
+      <p class="label">No Typing Required</p>
+      <h2>Just describe<br>what you ate.</h2>
+      <p>No camera? Type a few words &mdash; &ldquo;chicken rice bowl, large&rdquo; &mdash; and Gramo handles the rest. Fast, flexible, and accurate enough to actually use.</p>
+    </div>
+    <div class="feature-device fade-up fade-up-delay-1">
+      <div class="phone-frame">
+        <div class="screen">
+          <img src="/images/gramo/describe.png" alt="Text meal logging">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section class="values-section">
+    <p class="section-eyebrow fade-up">Built differently</p>
+    <h2 class="fade-up fade-up-delay-1">Awareness without the obsession.</h2>
+    <div class="values-grid">
+      <div class="value-item fade-up">
+        <span class="icon">📸</span>
+        <h3>Photo-first</h3>
+        <p>The fastest way to log a meal is to photograph it. No barcode, no database, no searching. Just snap.</p>
+      </div>
+      <div class="value-item fade-up fade-up-delay-1">
+        <span class="icon">⚡️</span>
+        <h3>Under 10 seconds</h3>
+        <p>From photo to logged. Gramo is designed so tracking doesn&rsquo;t interrupt the meal itself.</p>
+      </div>
+      <div class="value-item fade-up fade-up-delay-2">
+        <span class="icon">📊</span>
+        <h3>Macro tracking</h3>
+        <p>Calories are just the start. See protein, carbs, and fat for every meal and every day, in one clean view.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="download-section">
+    <h2 class="fade-up">Start tracking today.</h2>
+    <p class="fade-up fade-up-delay-1">No barcode scanner required.</p>
+    <div class="download-btns fade-up fade-up-delay-2">
+      <a href="#" class="btn btn-blue">Download on the App Store</a>
+      <a href="#" class="btn btn-outline">Get it on Google Play</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div class="footer-top">
+      <span class="footer-brand">Meridian&amp;</span>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/apps/gramo/support.html">Support</a>
+        <a href="/apps/gramo/privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2026 Meridian&amp;. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy &mdash; Gramo</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a href="/" class="site-logo">Meridian&amp;</a>
+    <nav class="site-nav">
+      <a href="/apps/gramo/support.html">Support</a>
+      <a href="/apps/gramo/privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-hero">
+    <span class="app-icon">🥗</span>
+    <h1>Gramo &mdash; Privacy Policy</h1>
+    <p>Simple summary: your photos are never stored. Your meal data is yours. We never sell it.</p>
+    <div class="page-nav">
+      <a href="/apps/gramo/">Overview</a>
+      <a href="/apps/gramo/support.html">Support</a>
+      <a href="/apps/gramo/privacy.html" class="active">Privacy Policy</a>
+    </div>
+  </div>
+
+  <div class="prose">
+    <p class="meta">Last updated: June 28, 2026</p>
+
+    <h2>1. Summary</h2>
+    <p>Gramo uses AI to analyse your meals from a photo or text description and log your calories and macros. Meal data is stored in the cloud so it syncs across your devices. We never sell your data or use it for advertising.</p>
+
+    <h2>2. Information We Collect</h2>
+
+    <h3>2.1 Account Data</h3>
+    <p>Gramo requires an account to sync your meal history. When you sign up, we collect your <strong>email address</strong> and a securely hashed password, stored in Supabase and used solely for authentication.</p>
+
+    <h3>2.2 Meal and Nutrition Data</h3>
+    <p>Meals you log &mdash; descriptions, calorie estimates, macros (protein, carbs, fats), portion sizes, meal categories, and timestamps &mdash; are stored in our Supabase database linked to your account. This data powers your history, daily totals, and trends screens.</p>
+
+    <h3>2.3 Photos and Food Descriptions</h3>
+    <p>When you photograph a meal or type a description, that input is sent to our AI service (powered by Google Gemini) to estimate calories and macros. <strong>Photos are not permanently stored on our servers</strong> after the AI analysis completes. Text descriptions used for AI parsing are not retained beyond the duration of the API request.</p>
+    <p>Google&rsquo;s data practices for Gemini API inputs are governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s Privacy Policy</a>.</p>
+
+    <h3>2.4 Analytics (PostHog)</h3>
+    <p>We use PostHog to collect anonymized usage analytics, including screens visited, feature interactions (e.g. photo capture started, meal logged, history viewed), app version, and platform. This data helps us understand which features are useful. PostHog analytics do <strong>not</strong> include the content of your meals or photos.</p>
+    <p>PostHog&rsquo;s privacy policy: <a href="https://posthog.com/privacy" target="_blank" rel="noopener">posthog.com/privacy</a>.</p>
+
+    <h3>2.5 Crash Reporting (Firebase Crashlytics)</h3>
+    <p>We use Firebase Crashlytics to collect crash reports and error logs. Crashlytics may collect device type, OS version, app version, and stack traces at the time of a crash. This is used exclusively to diagnose and fix bugs.</p>
+    <p>Google&rsquo;s privacy policy (covering Firebase): <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+
+    <h3>2.6 Permissions</h3>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Purpose</th><th>Required?</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Camera</td><td>Photograph meals for AI analysis</td><td>Optional</td></tr>
+        <tr><td>Photo Library</td><td>Upload meal photos from gallery</td><td>Optional</td></tr>
+      </tbody>
+    </table>
+    <p>You can revoke any permission at any time in your device Settings. Revoking camera or photo library access only disables photo-based logging; you can still log meals by typing a description.</p>
+
+    <h2>3. How We Use Your Information</h2>
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Account data</td><td>Authentication and account management</td></tr>
+        <tr><td>Meal and nutrition data</td><td>Display history, totals, trends, and calorie targets</td></tr>
+        <tr><td>Photos and descriptions</td><td>Sent to AI for calorie/macro estimation; not retained after response</td></tr>
+        <tr><td>Analytics events</td><td>Improve app features and user experience</td></tr>
+        <tr><td>Crash reports</td><td>Identify and fix bugs</td></tr>
+      </tbody>
+    </table>
+    <p>We do <strong>not</strong> sell your data, use it for advertising, or share your meal content with any party other than the AI parsing service described above.</p>
+
+    <h2>4. Data Storage and Retention</h2>
+    <ul>
+      <li><strong>Meal data</strong> is stored in Supabase (cloud). You can delete individual meals or your entire account at any time from within the app.</li>
+      <li><strong>Account data</strong> is deleted when you delete your account.</li>
+      <li><strong>Analytics and crash data</strong> are retained by PostHog and Firebase per their own retention policies.</li>
+      <li><strong>AI parsing inputs</strong> (photos and text) are not retained on our servers after the response is returned.</li>
+    </ul>
+
+    <h2>5. Children&rsquo;s Privacy</h2>
+    <p>Gramo is not directed at children under 13 (or under 16 in the EEA). We do not knowingly collect personal information from children. If you believe a child has provided us information, contact us and we will delete it promptly.</p>
+
+    <h2>6. International Users</h2>
+    <p>Our servers and third-party providers (Supabase, Google, PostHog) may process data in the United States or other countries. By using Gramo, you consent to this transfer.</p>
+
+    <h2>7. Your Rights</h2>
+    <p>Depending on your location, you may have rights to access, delete, or opt out of collection of your personal data. You can delete your account and all associated meal data from within the app. For other requests, contact: <a href="mailto:indiebuilderasad@gmail.com">indiebuilderasad@gmail.com</a>.</p>
+
+    <h2>8. Security</h2>
+    <p>All data transmitted to our servers uses HTTPS encryption. Passwords are hashed and never stored in plain text. Your meal data in Supabase is protected by row-level security policies.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this policy as the app evolves. We will update the &ldquo;Last updated&rdquo; date at the top. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>10. Contact</h2>
+    <p><strong>Muhammad Asad Shoaib / Meridian&amp;</strong><br>
+    Email: <a href="mailto:indiebuilderasad@gmail.com">indiebuilderasad@gmail.com</a></p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p>&copy; 2026 Meridian&amp;. All rights reserved.</p>
+    <a href="/">Home</a>
+  </div>
+</footer>
+
+</body>
+</html>
